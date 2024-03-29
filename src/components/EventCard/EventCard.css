@@ -1,0 +1,68 @@
+.card {
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 750px;
+  display: flex;
+  justify-content: space-between; /* Adjust alignment */
+  align-items: flex-start;
+  gap: 24px;
+  padding: 30px;
+  border-radius: 18px;
+  border: 3px solid var(--primary-color);
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+  width: 280px;
+  max-width: 100%;
+  border-radius: 14px;
+}
+
+.card .card-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.card .card-content h3 {
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #2b3230;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.card .card-content p {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.card .card-content p span {
+  font-size: 14px;
+  color: #6b6b6b;
+}
+
+/* New styles for time, category, and capacity */
+.card .card-content .event-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card .card-content .event-info span {
+  font-size: 14px;
+  color: #6b6b6b;
+}
+
+.card .card-content .event-info .time,
+.card .card-content .event-info .category,
+.card .card-content .event-info .capacity {
+  font-size: 14px;
+  font-weight: 500;
+}
